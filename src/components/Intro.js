@@ -8,13 +8,28 @@ const Section = styled.div`
   height: 70%;
   width: 60%;
   text-align: center;
-  text-shadow: 2px 2px #1B1A17;
+  text-shadow: 1px 3px 4px rgba(0,0,0,1);
   margin 0 auto;
 `;
 
 const Button = styled.button`
   background-color: #f0a500;
-  padding: 10px 14px;
+  color: #262626;
+  font-size: 0.9em;
+  font-weight: bold;
+  width: 175px;
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 6px 15px -7px rgba(48, 48, 48, 0.75);
+  -webkit-box-shadow: 4px 6px 15px -7px rgba(48, 48, 48, 0.75);
+  -moz-box-shadow: 4px 6px 15px -7px rgba(48, 48, 48, 0.75);
+
+  &:hover {
+    background-color: #dc9700;
+    border-radius: 3px;
+  }
 `;
 
 const Intro = () => {
