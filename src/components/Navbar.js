@@ -6,6 +6,7 @@ const WrapperNav = styled.div`
   align-items: center;
   padding: 20px 50px;
   color: #eee;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.51);
 `;
 
 const NavComponents = styled.div`
@@ -16,13 +17,19 @@ const NavComponents = styled.div`
 
 const NavLink = styled.a`
   color: #eee;
-  font-style: normal;
+  text-decoration: none;
+  &:hover {
+    color: #dc9700;
+    border-bottom: 1px solid #dc9700;
+  }
 `;
 
 const Navbar = () => {
   return (
     <WrapperNav>
-      <h3>AnjayResto</h3>
+      <h3>
+        <NavLink>AnjayResto</NavLink>
+      </h3>
       <NavComponents>
         <NavLink href="#">Beranda</NavLink>
         <NavLink href="#">Reservasi</NavLink>
