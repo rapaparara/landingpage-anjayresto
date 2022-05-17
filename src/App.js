@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import img from "./assets/img/img-intro.jpg";
 import Detail from "./components/Detail";
+import Product from "./components/Product";
+import Footer from "./components/Footer";
 
 const AppStyle = styled.div`
   background-color: #262626;
@@ -20,6 +22,10 @@ const DetailSection = styled.div`
   margin-top: 30px;
   height: auto;
 `;
+const ProductSection = styled.div`
+  margin-top: 30px;
+  height: auto;
+`;
 
 function App() {
   return (
@@ -31,6 +37,10 @@ function App() {
       <DetailSection>
         <Detail />
       </DetailSection>
+      <ProductSection>
+        <Product />
+      </ProductSection>
+      <Footer />
     </AppStyle>
   );
 }
